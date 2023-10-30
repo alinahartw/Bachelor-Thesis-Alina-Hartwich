@@ -283,7 +283,7 @@ def _get_relevant_dim(D_all):
     #return _use_median(D_all)
 
 
-@njit(nopython = False)
+@njit(fastmath= True)
 def sort_dists(D_all):
     """
     Sorts the distance matrix. 
